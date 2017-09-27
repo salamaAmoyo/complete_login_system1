@@ -1,0 +1,16 @@
+  <div ng-controller="actorsCtrl as photo"  class="photo" id="wrp1" >
+
+
+	<div ng-repeat="actor in photo.actors">
+	
+        {{actor.location}}
+       
+		<div ng-click="photo.goTo(actor.id);">
+            
+			<div><img width="300" height="200" ng-src="../upload_folder/{{actor.image}}"/></div>			
+					
+			
+		</div>	
+	
+	</div>
+</div>

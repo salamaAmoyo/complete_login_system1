@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title></title>
+	<link rel="stylesheet" href="gallery_styles.css">
+	
+	<!--<link href="styles.css">-->
+</head>
+
+<body>
+	
+	<div ng-controller="actorsCtrl as t">
+		{{t.title}}
+	</div>
+<!--
+	<div ng-controller=" as c">
+	 {{c.title}}
+	</div>
+-->
+	<nav>
+		<ul>
+			<li><a href="#!/gallery">gallery</a></li>
+			<li><a href="#!/">Home</a></li>
+			<li><a href="#!/about">about</a></li>
+			<li><a href="#!/contact">contact</a></li>
+		</ul>
+	</nav>
+	<hr>
+	<ng-view></ng-view>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-route/angular-route.js"></script>
+	<script src="app/config.js"></script>
+	<script src="app/route.js"></script>
+	<script src="app/controllers/actorsCtrl.js"></script>
+	<script src="app/controllers/actor.js"></script>
+	<script src="app/controllers/mainCtrl.js"></script>
+	
+</body>
+</html>
